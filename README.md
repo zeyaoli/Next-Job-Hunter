@@ -24,3 +24,9 @@ CSS is not the main part of this website but I go with the bold and dark style f
 
 
 ![job hunter interface 2](https://github.com/zeyaoli/Next-Job-Hunter/blob/master/documentations/images/image-2.png)
+
+### Next Step
+- Add a loader when loading jobs
+- Fix the button styling
+- Speed up the API loading time
+- Bring more options (accessibility / price)
