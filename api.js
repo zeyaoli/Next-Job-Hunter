@@ -41,7 +41,7 @@ const getRandom = async () => {
 	prevWord = randomWords;
 	// console.log(prevWord);
 
-	let jobURL = `http://api.dataatwork.org/v1/jobs/autocomplete?contains=${randomWords}`;
+	let jobURL = `https://api.dataatwork.org/v1/jobs/autocomplete?contains=${randomWords}`;
 	let jobResponse;
 	let jobs;
 	try {
@@ -54,11 +54,11 @@ const getRandom = async () => {
 	console.log(jobResponse.status);
 	// need to fix this part
 	if (jobResponse.status == 404) {
-		jobURL = `http://api.dataatwork.org/v1/jobs/normalize?job_title=${randomWords}`;
+		jobURL = `https://api.dataatwork.org/v1/jobs/normalize?job_title=${randomWords}`;
 		jobResponse = await fetch(jobURL);
 		jobs = await jobResponse.json();
 		if (jobResponse.status == 404) {
-			jobResponse = await fetch(`http://api.dataatwork.org/v1/jobs/unusual_titles`);
+			jobResponse = await fetch(`https://api.dataatwork.org/v1/jobs/unusual_titles`);
 			jobs = await jobResponse.json();
 		}
 	}
