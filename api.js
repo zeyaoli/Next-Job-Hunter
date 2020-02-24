@@ -25,7 +25,7 @@ const getRandom = async () => {
 	// getList();
 
 	const textRan = document.getElementById('randomString');
-	const url = `http://www.boredapi.com/api/activity?type=${type}`;
+	const url = `https://www.boredapi.com/api/activity?type=${type}`;
 
 	const response = await fetch(url);
 	const bored = await response.json();
