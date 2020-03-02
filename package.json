@@ -1,0 +1,27 @@
+{
+  "name": "api_skill_pair",
+  "version": "1.0.0",
+  "description": "A mini job generator for your next job hunting season.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeyaoli/Next-Job-Hunter.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Zeyao Li",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeyaoli/Next-Job-Hunter/issues"
+  },
+  "homepage": "https://github.com/zeyaoli/Next-Job-Hunter#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.0.0"
+  }
+}
