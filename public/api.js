@@ -25,7 +25,6 @@ const getRandom = async () => {
 
 	const response = await fetch(url);
 	const j = await response.json();
-	console.log(j);
 
 	randomString.innerHTML = `${j.activity} to become a ${j.description}`;
 };
