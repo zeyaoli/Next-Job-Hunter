@@ -22,6 +22,7 @@
   "homepage": "https://github.com/zeyaoli/Next-Job-Hunter#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "isomorphic-unfetch": "^3.0.0"
+    "isomorphic-unfetch": "^3.0.0",
+    "nodemon": "^2.0.4"
   }
 }
